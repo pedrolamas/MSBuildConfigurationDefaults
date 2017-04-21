@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MSBuildConfigurationDefaults</id>
+    <version>1.0.0</version>
+    <authors>Pedro Lamas</authors>
+    <owners>Pedro Lamas</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://pedrolamas.github.io/MSBuildConfigurationDefaults/LICENSE.txt</licenseUrl>
+    <projectUrl>https://pedrolamas.github.io/MSBuildConfigurationDefaults/</projectUrl>
+    <description>Create custom build configuration with defaults from "Debug" or "Release" configurations.</description>
+  </metadata>
+</package>

@@ -1,0 +1,6 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(ConfigurationGroup)' == '' and '$(Configuration)' != ''">
+    <ConfigurationGroup Condition="$(Configuration.StartsWith('Debug')) or $(Configuration.EndsWith('Debug'))">Debug</ConfigurationGroup>
+    <ConfigurationGroup Condition="$(Configuration.StartsWith('Release')) or $(Configuration.EndsWith('Release'))">Release</ConfigurationGroup>
+  </PropertyGroup>
+</Project>

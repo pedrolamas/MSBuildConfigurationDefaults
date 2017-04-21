@@ -1,0 +1,15 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(ConfigurationGroup)' == 'Debug' and '$(Configuration)' != 'Debug'">
+    <DefineConstants>$(DefineConstants);DEBUG;TRACE</DefineConstants>
+    <DebugSymbols Condition="'$(DebugSymbols)' == ''">true</DebugSymbols>
+    <DebugType Condition="'$(DebugType)' == ''">full</DebugType>
+    <Optimize Condition="'$(Optimize)' == ''">false</Optimize>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(ConfigurationGroup)' == 'Release' and '$(Configuration)' != 'Release'">
+    <DefineConstants>$(DefineConstants);RELEASE;TRACE</DefineConstants>
+    <DebugSymbols Condition="'$(DebugSymbols)' == ''">false</DebugSymbols>
+    <DebugType Condition="'$(DebugType)' == ''">portable</DebugType>
+    <Optimize Condition="'$(Optimize)' == ''">true</Optimize>
+  </PropertyGroup>
+</Project>
