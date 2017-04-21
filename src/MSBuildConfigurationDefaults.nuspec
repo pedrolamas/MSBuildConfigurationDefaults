@@ -9,5 +9,6 @@
     <licenseUrl>https://pedrolamas.github.io/MSBuildConfigurationDefaults/LICENSE.txt</licenseUrl>
     <projectUrl>https://pedrolamas.github.io/MSBuildConfigurationDefaults/</projectUrl>
     <description>Create custom build configuration with defaults from "Debug" or "Release" configurations.</description>
+    <developmentDependency>true</developmentDependency>
   </metadata>
 </package>
