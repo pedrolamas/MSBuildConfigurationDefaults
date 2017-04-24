@@ -2,13 +2,13 @@
 
 MSBuild based projects have two default build configurations: Debug and Release.
 
-While these two configurations are enough for the majority of projects, some might require developers to create custom build configurations (to support different environments, alternative build targets, ...)!
+While these two configurations are enough for most projects, some might actually require custom build configurations that will support different environments, alternative build targets, etc..
 
-Visual Studio Configuration Manager makes it easy to create a new build configuration by copying an existing build configuration setup, and then making whatever changes are required.
+Until now we could use Visual Studio Configuration Manager to easily create a copy an existing configuration setup, and then change small bits to match our specifications.
 
-But now there's a [new csproj format for .NET Core](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/csproj), which includes the expected Debug and Release build configurations.
+But now there's a [new csproj format for .NET Core](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/csproj), and while it includes the expected Debug and Release build configurations, the "copy configuration" process doesn't work anymore!
 
-Problem is that the new format is based in quite a few implicit defaults, so Visual Studio Configuration Manager can't actually create a proper copy of the existing build configurations.
+The problem is that the new project format is based in quite a few implicit defaults, so Visual Studio Configuration Manager can't actually create a copy of the existing build configurations with all the properties set.
 
 Ideally, one would like to "inherit" from the base Debug and Release configurations, and then just override specific properties.
 
