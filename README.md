@@ -53,7 +53,7 @@ If you don't want to name your custom build definition according to the rules ab
 The following is an example of a custom build configuration called "Production", that has the default values set as for the "Release" build configuration, but also overrides the `DebugSymbols` property default value:
 
 ```xml
-<PropertyGroup Condition="'$(Configuration)' == 'Prodution'">
+<PropertyGroup Condition="'$(Configuration)' == 'Production'">
   <ConfigurationGroup>Release</ConfigurationGroup>
   <DebugSymbols>true</DebugSymbols>
 </PropertyGroup>
